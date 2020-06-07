@@ -1,27 +1,29 @@
 # manjaro_init
 KDE
+
+1. hardcode-fix remove
+2. install programs
+```
 sudo pacman-mirrors -i -c China -m rank
 
-hardcode-fix remove
-
-/etc/pacman.conf
-`
+sudo nano /etc/pacman.conf
 [archlinuxcn]
 SigLevel = Optional TrustedOnly
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-`
+
 sudo pacman -Syy
 sudo pacman -S archlinuxcn-keyring  
+sudo pacman -Syyu
 
-
-fcitx-im fcm-fcitx
-```
-~/.pam_environment
+sudo pacman -S fcitx-im fcm-fcitx
+sudo nano ~/.pam_environment
 
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
+
+yay -S gtk2 easyconnect 
+yay -S jetbrains-toolbox
+yay -S v2ray qv2ray
 ```
-easyconnect
-yay -S gtk2 easyconnect jetbrains-toolbox
 
