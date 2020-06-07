@@ -29,7 +29,7 @@ sudo pacman -Syy
 sudo pacman -S archlinuxcn-keyring  
 sudo pacman -Syyu
 
-sudo pacman -S fcitx-im fcm-fcitx
+sudo pacman -S fcitx-im kcm-fcitx
 sudo nano ~/.pam_environment
 
 GTK_IM_MODULE=fcitx
