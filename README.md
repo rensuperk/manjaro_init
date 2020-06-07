@@ -39,10 +39,18 @@ XMODIFIERS=@im=fcitx
 yay -S gtk2 easyconnect 
 yay -S jetbrains-toolbox
 yay -S v2ray qv2ray
-sudo pacman -S postman evolution evolution-ews vim
+sudo pacman -S postman evolution evolution-ews vim zsh oh-my-zsh
+
+sudo chsh -s /bin/zsh
+git clone git://github.com/zsh-users/zsh-autosuggestions.git /usr/share/oh-my-zsh/plugins/zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/oh-my-zsh/plugins/zsh-syntax-highlighting
+cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
+nano ~/.zshrc
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+source ~/.zshrc
 
 
 ssh-keygen
-and then
+config ssh maven vipkid.xml idea plugins tiger 
 ```
 
