@@ -39,7 +39,7 @@ XMODIFIERS=@im=fcitx
 yay -S gtk2 easyconnect 
 yay -S jetbrains-toolbox
 yay -S v2ray qv2ray
-sudo pacman -S postman evolution evolution-ews vim zsh oh-my-zsh
+sudo pacman -S postman evolution evolution-ews vim zsh oh-my-zsh docker docker-compose 
 
 sudo chsh -s /bin/zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions.git /usr/share/oh-my-zsh/plugins/zsh-autosuggestions
@@ -49,6 +49,12 @@ nano ~/.zshrc
 plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
 source ~/.zshrc
 
+
+sudo usermod -aG docker ${USER}
+sudo systemctl start docker
+sudo systemctl enable docker
+su root             切换到root用户
+su ${USER}          再切换到原来的应用用户以上配置才生效
 
 ssh-keygen
 config ssh maven vipkid.xml idea plugins tiger 
