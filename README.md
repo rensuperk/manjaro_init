@@ -40,5 +40,9 @@ yay -S gtk2 easyconnect
 yay -S jetbrains-toolbox
 yay -S v2ray qv2ray
 sudo pacman -S postman evolution evolution-ews vim
+
+
+ssh-keygen
+and then
 ```
 
