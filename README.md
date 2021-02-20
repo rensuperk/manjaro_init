@@ -58,5 +58,17 @@ su ${USER}          再切换到原来的应用用户以上配置才生效
 
 ssh-keygen
 config ssh maven vipkid.xml idea plugins tiger 
+
+Top 10 Linux Apps:
+1. Ulauncher – Application Launcher
+2. Stacer – Optimizer And Monitor
+3. Timeshift – System Snapshot
+4. Kdenlive – Best Non-linear editing
+5. Simplenote – Clean Note Taking
+6. VLC – Play anything!
+7. Gnome Tweak – Change Anything
+8. Etcher – USB Image Writer
+9. GIMP – Professional Image Editing
+10. Notepadqq – Source Code Editor
 ```
 
